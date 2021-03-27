@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- for carowsel start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+      <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+      <!-- for bootstrap start --><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- for bootstrap end -->
+     <!-- for carowsel end -->
+     <style>
+        .navbrand{
+         font-size: 27px;
+         font-family: 'Dancing Script', cursive;
+         font-weight: bold;
+       }
+       .navpar{
+          font-size: 17px;
+          line-height: 3px;
+       }
+       .dropdown-item:hover{
+          background-color:transparent;
+       }
+        .img-fluid{
+         height:500px;
+       }
+      
+       .text{
+         height: 300px;
+         background-color: orange;
+       }
+       .row{
+         display: inline-flex;
+       }
+       .nav-link{
+        font-size: 15px;
+        font-weight: bold;
+       }
+       .nav-item a{
+     margin-left: 60px;
+     text-decoration: none;
+      }
+      .pink{
+        background-color: pink;
+        height: 500px;
+        width: 600px
+      }
+      .orange{
+        background-color: orange;
+        height: 500px;
+        width: 600px
+      }
+      .dlex{
+        display:flex;
+      }
+      .item{
+     height:390px;
+     border: 10px black;
+     border-radius: 10%;
+     box-shadow: 0 0 6px grey;
+   }
+   .item img{
+     height:300px;
+   }
+   .foot{
+     display: flex;
+     color:white;
+     text-decoration:none;
+     list-style:none;
+   }
+   .serv , .pro , .touch{
+     margin-top:20px;
+     height:200px;
+     width:200px;
+     margin: 20px;
+     margin-left: 80px;
+   }.serv a , .pro a{
+    text-decoration:none;
+     color:white;
+   }.serv li , .pro li{
+    list-style:none;
+    padding-top:17px;
+     color:white;
+   } 
+   body{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url('./images/asi.jpg');
+      height: 70vh;
+      background-repeat: no-repeat;
+      background-size:cover;
+   }.about{
+    margin-top: 500px;
+  }
+  .write h1{
+    margin-top: 300px;
+   font-size: 100px;
+   font-weight: bold;
+    color: whitesmoke;
+  }span{
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgb(139, 137, 137);
+  }.card-img-top{
+    height: 398px;
+  }
+  .about{
+    height: auto;
+  }
+  @media(max-width:450px){
+    .card-img-top{
+    height: 258px;
+  }
+  }@media(max-width:300px){
+    .card-img-top{
+    height: 218px;
+  }
+  }.copy{
+    margin-top: 80px;
+  }
+  @media(max-width:995px){
+    .nav-item a{
+     margin-left: 30px;
+      }
+      .serv li , .pro li{
+      padding-top:10px;
+   }
+   .copy{
+    margin-top: 100px;
+   }
+    .serv , .pro , .touch{
+     
+     width:300px;
+     margin-left: 50px;
+   } .collapse {
+    margin-left: 220px;
+}
+}
+@media(max-width:770px){
+  .serv , .pro , .touch{
+     width:380px;
+     margin-left: 10px;
+}
+}
+@media(max-width:545px){
+  .foot{
+    display: block;
+    height: 90vh;
+  }.serv {
+    padding-top: 30px;
+  }
+  .serv , .pro , .touch{
+     height:280px;
+     width: 300px;
+     margin-left: 50px;
+}
+
+  .about{
+    margin-top: 450px;
+  }
+}
+@media(max-width:390px){
+  .serv , .pro , .touch{
+     height:280px;
+     width: 230px;
+     margin-left: 20px;
+  } 
+  .collapse {
+    margin-left: 20px;
+}
+}
+
+     </style>
+    
+</head>
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-expand-md  navbar-dark  fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><h5 class="navbrand">UZMA</h5><p class="navpar">BRIDAL STORE</p></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link  text-white" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link  text-white" href="About.html">ABOUT</a>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link text-white dropdown-toggle" href="" id="navbardrop" data-toggle="dropdown">
+        PRODUCT
+      </a>
+      <div class="dropdown-menu bg-dark ">
+        <a class="dropdown-item text-white" href="engagement.html">Engagement Dresses</a>
+        <a class="dropdown-item text-white" href="nikkah.html">Nikkah Dresses</a>
+        <a class="dropdown-item text-white" href="mayoo.html">Mayoo Dresses</a>
+        <a class="dropdown-item text-white" href="mehndi.html">Mehndi Dresses</a>
+        <a class="dropdown-item text-white" href="barat.html">Barat Dresses</a>
+        <a class="dropdown-item text-white" href="valima.html">Valima  Dresses</a>
+      </div>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link  text-white" href="Contact.html">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- main section start -->
+<section class="main">
+  <div class="write">
+  <h1 class="text-capitalize text-center">About us</h1>
+  </div>
+  </section>
+  
+  
+  <!-- main section end -->
+
+
+<section class="about  mb-5 ">
+
+  <div class="container">
+
+    <h3 class="text-center">Buying Pakistani Bridal Dresses Online in Pakistan</h3>
+    <p>Whether you live right next to a shopping mall or you live a mile away from it, you will definitely find more Pakistani Women's Shopping online now than ever before. In this technological era, ladies are not supposed to waste their precious time running around in the local markets, shops and malls to find what they are looking for. Now all they have to do is 'click' and order their desired item to be delivered at their doorstep. It's not a surprise anymore that online stores give better discount offers than retail stores do. Plus they are open to shop 24/7 to serve and assist you, so you can just sit carelessly in your
+       designer dress at home, and sip your coffee while shopping online at 3 o'clock in the morning. Its really that simple.</p>
+       <br />
+       <h3>Popular Types of Womens Dresses</h3>
+       <p>
+        There is a vast array of <span>stylish womens dresses designs 2021</span>out there. In Pakistan, women can easily find a wide range of dress
+         designs and colours that can assist them to highlight their personal style, as well as accentuate their best features while hiding
+          away the ones they are not very proud of. From intricate <span> Pakistani bridal dresses</span> to beautifully embroidered ones, there are quite 
+          a lot of dresses that have gained much popularity among Pakistani women. It is very prominent that each dress has its own specialty. 
+          Women's will find attractive designing with quality printing. All <span>Ladies Dresses for Weddings </span> offered with various stuffs such as linen,
+           cotton, georgette, chiffon and other famous qualities
+         are easily available and are offered with seasonal preferences. A few examples include:</p>
+         <div class="container-fluid">
+             
+           <p><span>Bridal Dresses: </span> Finding the perfect Pakistani Bridal Dresses 2021 is probably one of the toughest things a woman will ever do in her life. You have to go to survey the market for at least a hundred times before finding the right bridal dress and when you finally do, the seller wants you to pay a price too much for it! To escape all that hassle, online stores like PakStyle.pk now provide a wide range of Pakistani Wedding 
+            Dresses with Prices online which are not only astoundingly beautiful but also quite reasonable.</p>
+            
+           <p><span>Designer Dresses: </span>  What started off as a trend is now considered as a necessity by every fashion-conscious woman and girl alike. Designer Embroidery Dresses including lawn dresses and ethnic wear are the most popular women's wear on the internet. The good thing about these ladies dresses is that they are splendid for voicing
+             your feminine side because of their unique floral and urban prints and cuts.</p>
+             
+           <p><span>Embroidered Dresses: </span> Embroidery is everywhere in spring. It's a sober embellishment that adds an instant spark to
+             practically any kind of boring fabric your dress is made of. That's why <span>Embroidered Dresses Pakistani</span> are in huge demand these days.
+             Embroidered dresses in Pakistan serve as a great semi-formal wear which can easily be carried by both women and children.</p>
+             
+           <p><span> Maxi Dresses & Bridal Frocks:</span> It's seriously amazing how a simple designer maxi dresses or designer frocks
+             can make a woman look stylish as well as sophisticated. A long <span>designer embroidered maxi dress</span> always looks elegant and 
+             feels comfortable to wear. If worn the right way, they can swamp you up and make you look taller and smarter. 
+            May be that's the very reason designer embroidered maxis and frocks are so famous among women.</p>
+            
+           <p><span> Net Dresses: </span> Designer Embroidered Net Dresses flatter almost all kinds of figures. 
+            The darker shades are a must-have for fall and winter season and the lighter shades work wonders for 
+            summer and springs. Designer Net Dresses serve as a great investment and a classic addition to your formal dress collection 2021.
+           </p> 
+           <p><span>Wedding Dresses: </span> To glam up a desi wedding, a traditional Pakistani Wedding Dresses are always the preferred choice among Pakistani women. Pakistani Bridal Lehengas, Pakistani Bridal Sarees, Pakistani Anarkali Frocks, and heavily embellished wedding dresses are few of the many amazing styles of
+             dress that ladies opt for when they are shopping online for a traditional wedding dress.</p>
+             
+         </div>
+         <h3>Where to find best Pakistani Dresses Online?</h3>
+         <p>Just visit a single <span> online clothing store </span> such as PakStyle.pk and check the Women's Dresses Online categories to find the latest collection of Pakistani Dresses for Sale online. All ladies dresses listed at PakStyle.pk have been designed in different color combinations.
+
+          Whether you are looking for Pakistani Bridal Dresses, Pakistani Party Dresses or Pakistani Wedding Dresses or Pakistani Chiffon Suits 2021 for wedding functions, browse PakStyle.pk to find the latest Pakistani wedding dresses designs or pictures online. You can also follow us at Facebook Page to get updates about the latest dresses collection 2021 upon launching. So what are you waiting for? 
+           Shop at PakStyle.pk today and avail our <span> Free Home Delivery nationwide with Cash on Delivery service</span>.</p>
+
+           <div class="container-fluid ">
+             <div class="row">
+
+               <div class=" col-lg-6 col-md-6 col-12"> 
+                <div class="card mt-5" >
+                  <div class="card-body">
+                    <a href="engagement.html"><h4 class="card-title text-capitalize">Bridal engagement dresses 2021 in pakistan </h4></a>
+                    <p class="card-text">The Groom's family will approach the bride and ask for her hand in marriage. Rings are now commonly exchanged 
+                      between the couple. Prayers and blessings will be read and cake will be cut . From this point the wedding day is priority 
+                      for everyone , dates are pencilled in diaries and everyone prepares.
+                    </p>
+                    <img class="card-img-top" src="./images/latest.jpg" alt="Card image">
+                  </div>
+                </div>
+               </div>
+
+               <div class=" col-lg-6 col-md-6 col-12"> 
+                <div class="card mt-5" >
+                  <div class="card-body">
+                    <a href="nikkah.html"><h4 class="card-title text-capitalize">Bridal nikkah dresses 2021 in pakistan </h4></a>
+                    <p class="card-text"><span>Nikkah</span> is the most beautiful relation a girl and guy get tied into. 
+                      It is the day when all the friends and family members get together to celebrate your big day with you,
+                       the day when you finally say yes to your man. It is a dream of every girl to dress up in the most beautiful
+                        attire on the day of her Nikkah....</p>
+                  </p>
+                    <img class="card-img-top" src="./images/default.jpg" alt="Card image">
+                  </div>
+                </div>
+               </div>
+
+             </div>
+
+             <div class="row">
+
+              <div class=" col-lg-6 col-md-6 col-12"> 
+               <div class="card mt-5" >
+                 <div class="card-body">
+                   <a href="mayoo.html"><h4 class="card-title text-capitalize">Bridal mayoo dresses 2021 in pakistan </h4></a>
+                   <p class="card-text">Corona might have delayed a lot of weddings happening during 2020, but 2021 has started as a wedding year with a lot of weddings happening since the start of the year. Weddings trends continuously evolve, which means that new trends are being introduced regularly, 
+                     so you need to catch up on them to look chic for your wedding or the weddings you mig...</p>
+                   <img class="card-img-top" src="./images/low.jpg" alt="Card image">
+                 </div>
+               </div>
+              </div>
+
+              <div class=" col-lg-6 col-md-6 col-12"> 
+               <div class="card mt-5" >
+                 <div class="card-body">
+                   <a href="mehndi.html"><h4 class="card-title text-capitalize">Bridal mehndi dresses 2021 in pakistan </h4></a>
+                   <p class="card-text">Corona might have delayed a lot of weddings happening during 2020, but 2021 has started as a wedding year with a lot of weddings happening since the start of the year. Weddings trends continuously evolve, which means that new trends are being introduced regularly, 
+                     so you need to catch up on them to look chic for your wedding or the weddings you mig...</p> 
+                   <img class="card-img-top" src="./images/maxres.jpg" alt="Card image">
+                 </div>
+               </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class=" col-lg-6 col-md-6 col-12"> 
+               <div class="card mt-5" >
+                 <div class="card-body">
+                   <a href="barat.html"><h4 class="card-title text-capitalize">Bridal barat dresses 2021 in pakistan </h4></a>
+                   <p class="card-text">Barat is sometimes with nikkah then someone separates. Barat is a function in which the groom comes with his 
+                     family and guests and takes the bride away with him .In this function the bride wears more red and golden dress... <br> <br></p>
+
+
+
+                   <img class="card-img-top" src="./images/max.jpg" alt="Card image">
+                 </div>
+               </div>
+              </div>
+
+              <div class=" col-lg-6 col-md-6 col-12"> 
+               <div class="card mt-5" >
+                 <div class="card-body">
+                   <a href="valima.html"><h4 class="card-title text-capitalize">Bridal valima dresses 2021 in pakistan </h4></a>
+                   <p class="card-text">Among the three necessary wedding functions of any marriage ceremony in Pakistan, Walima is the third and the final one. Walima is the grand lunch or dinner given by the groom's family and usually is attended by hundreds of guests. When the Barat function is all 
+                     about the bright reds and pinks, brides prefer wearing lighter shades, as well as metal....</p>
+                   <img class="card-img-top" src="./images/Wal.jpg" alt="Card image">
+                 </div>
+               </div>
+              </div>
+
+            </div>
+
+             
+           </div>
+  </div>
+  </section>
+
+
+ <!--footer section start-->
+<footer class=" ">
+  <div class="foot container ">
+    <div class="serv">
+      <h3>All Links</h3>
+      <ul>
+        <li><a href="">HOME</a> </li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">PRODUCT</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+  </div>
+  <div class="pro">
+  <h3>Products</h3>
+  <ul>
+        <li><a href="">MAYOO DRESSES</a> </li>
+        <li><a href="">BARAT DRESSES</a></li>
+        <li><a href="">WALIMA DRESSES</a></li>
+        <li><a href="">MEHNDI DRESSES</a></li>
+        <li><a href="">ENGAGEMENT DRESSES</a></li>
+      </ul>
+  </div>
+  <div class="touch">
+    <h3 class="text-white ">Get in Touch with</h3>
+    <div class="container mt-5">
+      <a href="https://www.facebook.com"><i class="fa fa-2x fa-facebook text-white text-center ml-3" aria-hidden="true"></i></a> 
+       <a href="https://www.instagram.com/"><i class="fa fa-2x fa-instagram text-white text-center ml-3" aria-hidden="true"></i></a> 
+      <a href="https://www.skype.com/"><i class="fa fa-2x fa-skype text-center text-white ml-3" aria-hidden="true"></i></a> 
+     </div>
+  </div>
+  </div>
+  <h6 class="text-center text-white container copy mt-5" >Copyright © 2020 Affordable.Pk Powered by colorib</h6>
+  
+
+</footer>
+<!-- footer section end-->
+
+
+
+
+
+   <!-- for carowsel start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+ integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+ integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+ 
+ <!-- for carowsel end -->
+   <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
